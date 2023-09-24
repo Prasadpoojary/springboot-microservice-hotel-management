@@ -8,3 +8,20 @@ Hotel management project with below architecture style.
 ## API gateway
 ## Eureka service discovery
 ## Logging 
+
+
+Kafka setup :
+
+Need to create below two topic 
+-- HotelNotificationTopic
+-- HotelPaymentTopic
+
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+.\bin\windows\kafka-topics.bat --create --topic HotelNotificationTopic --bootstrap-server localhost:9092  --partitions 1
+
+.\bin\windows\kafka-topics.bat --create --topic HotelPaymentTopic --bootstrap-server localhost:9092  --partitions 1
+
+.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092

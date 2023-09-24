@@ -42,3 +42,7 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
+
+logging:
+  file:
+    name: C:/Users/prasa/Documents/Project/springboot-microservice-hotel-management/elk-stack.log

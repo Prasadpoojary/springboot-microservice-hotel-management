@@ -50,7 +50,7 @@ public class CustomerService implements ICustomerService
             customer.setPassword(passwordEncoder.encode(customer.getPassword()));
             Customer newCustomer=customerRepository.save(customer);
 //            Kafka welcome notification
-//            notify(newCustomer.getId(),"Welcome to our Hotel Reservation platform");
+            notify(newCustomer.getId(),"Welcome to our Hotel Reservation platform");
             logger.info("Customer registered : {}",newCustomer.getEmail());
             return newCustomer;
         }
