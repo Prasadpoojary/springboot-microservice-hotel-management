@@ -1,4 +1,8 @@
 # springboot-microservice-hotel-management
+
+![Architecture](https://github.com/Prasadpoojary/springboot-microservice-hotel-management/blob/master/Architecture.png)
+
+
 Hotel management project with below architecture style. 
 
 ## Saga pattern
